@@ -3,7 +3,7 @@ import { Draggable, Droppable } from 'react-drag-and-drop'
 import './App.css';
 
 const boxes = [0,1,2,3]; // Depends of how many boxes you have
-const src = 'https://unsplash.it/200/200?image=1074';
+const src = 'https://unsplash.it/200/200?image=1074'; // img from google which is exactly 200/200 size like sizes of boxes
 const droppableParent = {
   display: 'flex',
   justifyContent: 'space-around',
@@ -11,7 +11,6 @@ const droppableParent = {
 };
 
 class App extends Component {
-
   state = {
     dragElement: '',
     indexImg: 0,
